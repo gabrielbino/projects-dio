@@ -1,1 +1,0 @@
-// A entrada contêm 2 valores int separados por um espaço
