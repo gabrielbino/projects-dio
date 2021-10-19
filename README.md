@@ -1,2 +1,1 @@
-# Projetos feitos na plataforma Digital Inovation One
-- Repositório com os projetos feitos na DIO
+# Projetos feitos na plataforma Digital Innovation One
