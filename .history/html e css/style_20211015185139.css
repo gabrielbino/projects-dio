@@ -1,0 +1,54 @@
+body {
+  background-color: #d7d7d7;
+  font-family: Verdana, sans-serif;
+  max-width: 900px;
+  margin: auto;
+}
+
+.photo {
+  border: 1px solid #505050;
+  border-radius: 50px;
+}
+
+#title,
+.subtitle,
+.post_title {
+  color: #505050;
+}
+
+#title {
+  font-size: 40px;
+  text-transform: uppercase;
+}
+
+a {
+  text-decoration: line-through;
+  color: #505050;
+}
+
+.post_title {
+  font-size: 16px;
+  font-style: italic;
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+.post {
+  background-color: #fff;
+  padding: 10px;
+  border: 1px solid #000;
+  margin: 10px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+}
+
+.post_content {
+  margin: 0;
+  margin-bottom: 15px;
+  text-transform: capitalize; /* A primeira letra de cada palavra em maíusculo. */
+}
+
+.contact_list {
+  list-style-type: none;
+  padding-left: 15px;
+}

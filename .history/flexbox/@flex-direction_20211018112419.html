@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fundamentos - Flex direction</title>
+    <style>
+      .flexContainer {
+        display: flex;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+      .flexItem {
+        background-color: aquamarine;
+        height: 70px;
+        width: 70px;
+        line-height: 70px;
+        font-size: 20px;
+        text-align: center;
+        margin: 5px;
+      }
+      .row {
+        flex-direction: row;
+      }
+      .rowReverse li {
+        background-color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <ul class="flexContainer row">
+      <li class="flexItem">1</li>
+      <li class="flexItem">2</li>
+      <li class="flexItem">3</li>
+      <li class="flexItem">4</li>
+    </ul>
+  </body>
+</html>
