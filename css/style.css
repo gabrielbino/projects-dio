@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
 * {
   box-sizing: border-box;
 }
@@ -7,13 +9,13 @@ img {
 }
 
 body {
-  background-color: #fdfdfd;
-  color: #353535;
-  font-family: 'Fira Sans', sans-serif;
+  background-color: #ebfffb;
+  color: black;
+  font-family: "Fira Sans", sans-serif;
 }
 
 main {
-  background-color: #fff;
+  background-color: #ebfffb;
   box-shadow: 0 0 1.5rem rgba(53, 53, 53, 0.1);
   display: flex;
   margin: 0 auto;
@@ -23,7 +25,7 @@ main {
 }
 
 aside {
-  background: #e9ebec;
+  background-color: #b5ffd9;
   padding: 50px 0 16px;
   width: 280px;
 }
@@ -38,14 +40,14 @@ aside {
 }
 
 .profile-picture {
-  border-radius: 20px;
-  border: solid 4px #284b63;
+  border-radius: 50%;
+  border: solid 4px #170055;
   width: 180px;
 }
 
 .title-name {
-  color: #284b63;
-  font-family: 'Merriweather', serif;
+  color: #170055;
+  font-family: "Merriweather", serif;
   font-weight: 700;
   margin: 8px 0 0;
 }
@@ -55,7 +57,7 @@ aside {
 }
 
 .subtitle-role {
-  background: #284b63;
+  background: #170055;
   border-radius: 12px;
   color: #e9ebec;
   font-size: 14px;
@@ -74,7 +76,7 @@ aside {
 }
 
 .social-links a {
-  color: #284b63;
+  color: #170055;
 }
 
 .social-links a:hover {
@@ -88,7 +90,7 @@ aside {
 }
 
 .personal-data li {
-  color: #284b63;
+  color: #170055;
   font-weight: 600;
   line-height: 1.5;
 }
@@ -105,7 +107,7 @@ aside {
 }
 
 .download-button {
-  background: #3c6e71;
+  background: #170055;
   border-radius: 8px;
   color: white;
   display: block;
@@ -115,7 +117,7 @@ aside {
 }
 
 section {
-  background: #fff;
+  background-color: #fff1e6;
   padding: 50px 32px 0;
   width: calc(100% - 280px);
 }
@@ -127,7 +129,7 @@ article:not(:last-of-type) {
 .article-title-wrapper {
   align-items: center;
   border-bottom: 4px solid;
-  color: #284b63;
+  color: #170055;
   display: inline-flex;
   margin-bottom: 12px;
   padding: 0 2px;
@@ -139,7 +141,7 @@ article:not(:last-of-type) {
 
 .article-title {
   border-top: 4px solid;
-  color: #284b63;
+  color: #170055;
   font-size: 32px;
   font-weight: 800;
   margin: 0 0 2px;
@@ -161,9 +163,9 @@ article:not(:last-of-type) {
 .timeline li::after {
   background-color: #fff;
   border-radius: 50%;
-  border: 1px solid #3c6e71;
+  border: 1px solid #170055;
   box-sizing: border-box;
-  content: '';
+  content: "";
   display: inline-block;
   height: 8px;
   left: 0;
@@ -173,8 +175,8 @@ article:not(:last-of-type) {
 }
 
 .timeline li:not(:last-of-type)::before {
-  background-color: #3c6e71;
-  content: '';
+  background-color: #170055;
+  content: "";
   height: 100%;
   left: 3.5px;
   position: absolute;
@@ -183,19 +185,19 @@ article:not(:last-of-type) {
 }
 
 .timeline-title {
-  color: #284b63;
+  color: #170055;
   font-size: 20px;
   margin: -8px 0 0;
 }
 
 .timeline-time {
-  color: #284b63;
+  color: #170055;
   font-weight: 400;
   margin: 0;
 }
 
 .timeline-place {
-  color: #284b63;
+  color: #170055;
   font-size: 18px;
   font-weight: 600;
   margin: 12px 0 4px;
@@ -225,7 +227,7 @@ article:not(:last-of-type) {
 
 .progress-bar {
   align-items: center;
-  background-color: #284b63;
+  background-color: #170055;
   border-radius: 20px;
   color: #fff;
   display: flex;
@@ -263,14 +265,14 @@ article:not(:last-of-type) {
 .soft-skill-rating::before {
   background-clip: text;
   background: linear-gradient(90deg, #fc0 var(--percent), #fff var(--percent));
-  content: '★★★★★';
+  content: "★★★★★";
   letter-spacing: 3px;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .soft-skill-label {
-  color: #284b63;
+  color: #170055;
   margin: 4px 0 0;
 }
 
@@ -286,7 +288,7 @@ article:not(:last-of-type) {
   width: calc(50% - 12px);
 }
 
-.portfolio-item figure {
+/* .portfolio-item div {
   margin: 0;
 }
 
@@ -294,4 +296,46 @@ article:not(:last-of-type) {
   color: #3c6e71;
   font-weight: 800;
   text-align: center;
+} */
+
+@media (max-width: 1024px) {
+  .soft-skills {
+    flex-wrap: wrap;
+  }
+
+  .soft-skill {
+    margin: 4px;
+    width: calc(50% - 8px);
+  }
+}
+
+@media (max-width: 768px) {
+  main {
+    display: block;
+  }
+
+  aside,
+  section {
+    width: 100%;
+  }
+
+  section {
+    padding: 32px 16px 0;
+  }
+
+  .article-title-wrapper {
+    display: flex;
+    padding: 0;
+  }
+
+  .progress,
+  .soft-skill,
+  .portfolio-item,
+  .article-title {
+    width: 100%;
+  }
+
+  .portfolio-item figure {
+    text-align: center;
+  }
 }
